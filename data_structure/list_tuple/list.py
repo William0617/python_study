@@ -3,7 +3,6 @@
 # Time: 2019-05-02 14:48
 # File: list.py
 # IDE: PyCharm
-
 import random
 
 number = [2, 4, 6, 8, 10]
@@ -15,7 +14,6 @@ num = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 print(py[0:3:1])
 a = list(range(2, 21, 2))
 print(a)
-
 # 列表推导式
 list_a = []
 # for i in range(10):
@@ -25,16 +23,11 @@ list_b = [random.randint(10, 100) for i in range(10)]
 price = [10, 20, 30, 40, 50]
 list_c = [int(x * 0.5) for x in price]
 list_d = [x for x in price if x > 20]
-
-
-
-
-
 # 列表统计，统计某元素出现次数
 print(a.count(1))
 # 计算某元素出现的位置
 print(a.index(10))
-
+# 常用统计函数
 print(max(num))
 print(min(num))
 print(len(num))
@@ -42,9 +35,7 @@ print(sum(num))
 # 排序
 num.sort()  # list.sort()功能是针对列表自己内部进行排序， 不会有返回值， 因此返回为None。
 print(num)
-
 print(list(sorted(num)))  # 不改变原来的内容
-
 # 追加元素
 a.append('add element')
 print(a)
